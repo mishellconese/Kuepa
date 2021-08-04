@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { db } from "../firebase";
-import { toast } from "react-toastify";
 
 const LinksForm = (props) => {
   const initialStateValues = {
-    url: "",
+    id: "",
     name: "",
     description: "",
     contacto: "",
@@ -26,25 +25,12 @@ const LinksForm = (props) => {
     setValues({ ...values, [name]: value });
   };
 
-  const validURL = (str) => {
-    var pattern = new RegExp(
-      "^(https?:\\/\\/)?" + // protocol
-      "((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|" + // domain name
-      "((\\d{1,3}\\.){3}\\d{1,3}))" + // OR ip (v4) address
-      "(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*" + // port and path
-      "(\\?[;&a-z\\d%_.~+=-]*)?" + // query string
-        "(\\#[-a-z\\d_]*)?$",
-      "i"
-    ); // fragment locator
-    return !!pattern.test(str);
-  };
+  
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!validURL(values.url)) {
-      return toast("invalid url", { type: "warning", autoClose: 1000 });
-    }
+  
 
     props.addOrEditLink(values);
     setValues({ ...initialStateValues });
@@ -89,8 +75,8 @@ const LinksForm = (props) => {
           type="text"
           className="form-control"
           placeholder="Número de id"
-          value={values.url}
-          name="url"
+          value={values.id}
+          name="id"
           onChange={handleInputChange}
         />
       </div>
