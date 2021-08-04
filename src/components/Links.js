@@ -21,7 +21,7 @@ const Links = () => {
   const onDeleteLink = async (id) => {
     if (window.confirm("are you sure you want to delete this link?")) {
       await db.collection("links").doc(id).delete();
-      toast("Link Removed Successfully", {
+      toast("Information Removed Successfully", {
         type: "error",
         autoClose: 2000
       });
@@ -36,12 +36,12 @@ const Links = () => {
     try {
       if (currentId === "") {
         await db.collection("links").doc().set(linkObject);
-        toast("New Link Added", {
+        toast("New Information Added", {
           type: "success",
         });
       } else {
         await db.collection("links").doc(currentId).update(linkObject);
-        toast("Link Updated Successfully", {
+        toast("Information Updated Successfully", {
           type: "info",
         });
         setCurrentId("");
@@ -78,7 +78,6 @@ const Links = () => {
                 </div>
               </div>
               <p>{link.description}</p>
-              <a href={link.url} target="_blank" rel="noopener noreferrer">Go to Website</a>
             </div>
           </div>
         ))}

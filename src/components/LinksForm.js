@@ -7,6 +7,16 @@ const LinksForm = (props) => {
     url: "",
     name: "",
     description: "",
+    contacto: "",
+    contrato: "",
+    salario:"",
+    razon:"",
+    trabajo:"",
+    egreso:"",
+    programa:"",
+    correo:"",
+    direccion:"",
+    telefono:"",
   };
 
   const [values, setValues] = useState(initialStateValues);
@@ -56,39 +66,132 @@ const LinksForm = (props) => {
 
   return (
     <form onSubmit={handleSubmit} className="card card-body border-primary">
-      <div className="form-group input-group">
+
+<div className="form-group input-group">
         <div className="input-group-text bg-light">
-          <i className="material-icons">info</i>
-        </div>
-        <input
-          type="text"
-          className="form-control"
-          placeholder="Nombre completo"
-          value={values.url}
-          name="url"
-          onChange={handleInputChange}
-        />
-      </div>
-      <div className="form-group input-group">
-        <div className="input-group-text bg-light">
-          <i className="material-icons">info</i>
+          <i className="material-icons">account_circle</i>
         </div>
         <input
           type="text"
           value={values.name}
           name="name"
-          placeholder="Número de id"
+          placeholder="Nombre completo"
           className="form-control"
           onChange={handleInputChange}
         />
       </div>
+
+      <div className="form-group input-group">
+        <div className="input-group-text bg-light">
+          <i className="material-icons">info</i>
+        </div>
+        <input
+          type="text"
+          className="form-control"
+          placeholder="Número de id"
+          value={values.url}
+          name="url"
+          onChange={handleInputChange}
+        />
+      </div>
+      
       <div className="form-group">
         <textarea
-          rows="3"
+          rows="1"
           className="form-control"
-          placeholder="Write a Description"
-          name="description"
-          value={values.description}
+          placeholder="Teléfono"
+          name="telefono"
+          value={values.telefono}
+          onChange={handleInputChange}
+        ></textarea>
+      </div>
+      <div className="form-group">
+        <textarea
+          rows="1"
+          className="form-control"
+          placeholder="Dirección actual"
+          name="direccion"
+          value={values.direccion}
+          onChange={handleInputChange}
+        ></textarea>
+      </div>
+      <div className="form-group">
+        <textarea
+          rows="1"
+          className="form-control"
+          placeholder="Correo electronico"
+          name="correo"
+          value={values.correo}
+          onChange={handleInputChange}
+        ></textarea>
+      </div>
+      <div className="form-group">
+        <textarea
+          rows="1"
+          className="form-control"
+          placeholder="Programa"
+          name="programa"
+          value={values.programa}
+          onChange={handleInputChange}
+        ></textarea>
+      </div>
+      <div className="form-group">
+        <textarea
+          rows="1"
+          className="form-control"
+          placeholder="Periodo de egreso"
+          name="egreso"
+          value={values.egreso}
+          onChange={handleInputChange}
+        ></textarea>
+      </div>
+      <div className="form-group">
+        <textarea
+          rows="1"
+          className="form-control"
+          placeholder="Trabaja actualmente enfocado a su egreso"
+          name="trabajo"
+          value={values.trabajo}
+          onChange={handleInputChange}
+        ></textarea>
+      </div>
+      <div className="form-group">
+        <textarea
+          rows="1"
+          className="form-control"
+          placeholder="Razón por las cual no se ha podido ubicar laboralmete"
+          name="razon"
+          value={values.razon}
+          onChange={handleInputChange}
+        ></textarea>
+      </div>
+      <div className="form-group">
+        <textarea
+          rows="1"
+          className="form-control"
+          placeholder="Salario base"
+          name="salario"
+          value={values.salario}
+          onChange={handleInputChange}
+        ></textarea>
+      </div>
+      <div className="form-group">
+        <textarea
+          rows="1"
+          className="form-control"
+          placeholder="Tipo de contrato"
+          name="contrato"
+          value={values.contrato}
+          onChange={handleInputChange}
+        ></textarea>
+      </div>
+      <div className="form-uno">
+        <textarea
+          rows="1"
+          className="form-control"
+          placeholder="Contacto adicional"
+          name="contacto"
+          value={values.contacto}
           onChange={handleInputChange}
         ></textarea>
       </div>
