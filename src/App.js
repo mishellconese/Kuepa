@@ -1,16 +1,17 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import Links from "./components/Links";
+import "./App.css";
 
-import Links from './components/Links';
-import LinkForm from './components/LinkForm';
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
-    <div className="container p-4">
+    <div className="container p-14">
       <div className="row">
-      <LinkForm/>
-      <Links/>
+        <Links />
       </div>
+      <ToastContainer />
     </div>
   );
 }
