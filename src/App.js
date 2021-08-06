@@ -1,17 +1,24 @@
 import React from 'react';
 import './App.css';
+import './estilo.footer.css';
+import './estilo.header.css';
+import './index.css';
 
-import Links from './components/Links';
-import LinkForm from './components/LinkForm';
+
+
+import Footer from './components/footer.jsx';
+import Header from './components/header.jsx';
+import Page from './components/home.jsx';
+
 
 function App() {
   return (
-    <div className="container p-4">
-      <div className="row">
-      <LinkForm/>
-      <Links/>
+    <div>
+
+      <Header/>
+      <Page/>
+      <Footer/>
       </div>
-    </div>
   );
 }
 

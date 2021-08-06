@@ -1,5 +1,5 @@
 import React from 'react';
-import {header,home,footer} from '../../component';
+import {header,home,footer} from 'src/components';
 function Login() {
     return (
       <div>

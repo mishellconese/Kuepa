@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom';
 
 import App from './App';
 
-import './index.css';
+import './footer'
+import './header'
+import './home';
 import './firebase'
 import 'bootswatch/dist/superhero/bootstrap.min.css'
 
