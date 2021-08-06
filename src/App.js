@@ -6,15 +6,14 @@ import './index.css';
 
 
 
-import Footer from './components/footer.jsx';
-import Header from './components/header.jsx';
-import Page from './components/home.jsx';
+import Footer from './components/footer/footer.jsx';
+import Header from './components/header/header.jsx';
+import Page from './components/home/home.jsx';
 
 
 function App() {
   return (
     <div>
-
       <Header/>
       <Page/>
       <Footer/>

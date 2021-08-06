@@ -25,6 +25,9 @@ function home() {
                   <div className="esq">
                       <img className="img1" src={derecho} alt="kuepa" />
                  </div>
+
+                <a className="boton" href="#">Iniciar Sesión</a>
+
             </div>
         </section>
    );

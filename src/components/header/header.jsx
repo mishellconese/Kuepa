@@ -8,15 +8,11 @@ function header() {
 
                 <div class="cont1">
 
-                    <div class="divz">
-                        <div class="header"></div>
-                        <div class="hamburger"></div>
-                        <div class="_layer -top"></div>
-                        <div class="_layer -mid"></div>
-                        <div class="_layer -bottom"></div>
-                    </div>
+                    <div class="header">
 
-                    <img class="logo" src={logo} alt="Kuepa logo" />
+                         <img class="logo" src={logo} alt="Kuepa logo" />
+
+                    </div>
 
                 </div>
         </div>

@@ -20,12 +20,17 @@ function home() {
 
                   <input className="barra" type="password" name="Pass" />
 
+                  <div className="boton">
+                        <a className="a" href="#">Iniciar Sesión</a>
+                  </div>
+
                  </div>
 
                   <div className="esq">
                       <img className="img1" src={derecho} alt="kuepa" />
                  </div>
             </div>
+
         </section>
    );
 }
