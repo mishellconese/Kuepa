@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5ae21c704302053c0e6dbadf6d8c3f0a84946648
 import logo from '../../utils/imagenes/kuepa_logo.png'
 import './estilo.header.css'
 
