@@ -1,7 +1,7 @@
 import logo from '../../utils/imagenes/kuepa_logo.png'
 import './estilo.footer.css'
 
-function footer() {
+function Footer() {
     return (
 
 <div className="body">
@@ -18,4 +18,4 @@ function footer() {
 </div>
     );
   }
-  export default footer;
+  export default Footer;

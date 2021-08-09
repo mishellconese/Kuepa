@@ -1,12 +1,12 @@
 import React from 'react';
-import {header,home,footer} from 'src/components';
+import {Header,Home,Footer} from 'src/components';
 function Login() {
     return (
       <div>
         <>
-        <header/>
-        <home/>
-        <footer/>
+        <Header/>
+        <Home/>
+        <Footer/>
         </>
      </div>
     );

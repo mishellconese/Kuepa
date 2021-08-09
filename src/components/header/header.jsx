@@ -1,7 +1,7 @@
 import logo from '../../utils/imagenes/kuepa_logo.png'
 import './estilo.header.css'
 
-function header() {
+function Header() {
     return (
 
         <div class="body">
@@ -20,4 +20,4 @@ function header() {
     );
   }
 
-export default header;
+export default Header;

@@ -1,7 +1,7 @@
 import derecho from '../../utils/imagenes/image_3.png'
 import './index.css'
 
-function home() {
+function Home() {
     return (
 
         <section className="body">
@@ -34,4 +34,4 @@ function home() {
         </section>
    );
 }
-export default home;
+export default Home;
