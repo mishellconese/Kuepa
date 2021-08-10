@@ -1,5 +1,7 @@
+import React from 'react';
 import derecho from '../../utils/imagenes/image_3.png'
 import './index.css'
+import Egresados from '../../Egresados';
 
 const Home = (props) => {
 
@@ -37,8 +39,8 @@ const Home = (props) => {
 
                   <p className="errorMsg">{passwordError}</p>
 
-                  <div className="boton">
-                        <a onClick={handleSingup} className="a" href="#">Iniciar Sesión</a>
+                  <div>
+                        <button onClick={handleLogin} className="boton">Iniciar Sesión</button>
                   </div>
 
                  </div>

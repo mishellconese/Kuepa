@@ -67,40 +67,33 @@
 }
 
 .boton{
-
-    height: 35px;
-    width: 25%;
-    background-color: #FF671B;
-    border-radius: 10px;
-    box-shadow: #000000;
-    padding: 2px;
-    margin-left: 55%;
-    margin-top: 30px;
-    cursor: pointer;
-}
-
-.boton:hover{
-
-    background-color: #ca5a22;
-}
-
-.a{
-
     font-size: 22px;
     text-decoration: none;
     color: white;
     font-family: 'Montserrat', sans-serif;
     text-align:center ;
     margin-left: 5px;
-
+    height: 35px;
+    width: 25%;
+    background-color: #FF671B;
+    border-radius: 10px;
+    box-shadow: #000000;
+    padding: 0px;
+    margin-left: 55%;
+    margin-top: 30px;
+    cursor: pointer;
+    border :  none;
 }
 
-a:hover{
+.boton:hover{
 
+    background-color: #ca5a22;
     color: rgba(255, 255, 255, 0.829);
 }
 
 .errorMsg {
     color: red;
+    margin-left: 55px;
+    margin-top: 10px;
     font-size: 15px;
   }

@@ -1,4 +1,3 @@
-
 import React, {useState, useEffect} from "react";
 import fire from 'firebase/app';
 import './App.css';
@@ -10,6 +9,7 @@ import './index.css';
 import Footer from './components/Footer/Footer.jsx';
 import Header from './components/Header/Header.jsx';
 import Page from './components/Home/Home.jsx';
+import Egresados from "./Egresados";
 
 
 function App() {
@@ -93,8 +93,16 @@ const authListener = () => {
 
   return (
     <div>
-     <Header/>
-     <Page
+      {user ? (
+        <>
+        <Header/>
+        <Egresados handleLogout={handleLogout}/>
+        <Footer/>
+        </>
+      ):(
+        <>
+        <Header/>
+        <Page
         email={email}
         setEmail={setEmail}
         password={password}
@@ -106,9 +114,11 @@ const authListener = () => {
         emailError={emailError}
         passwordError={passwordError}
         />
-     <Footer/>
+        <Footer/>
+        </>
+      )}
       </div>
   );
-}
+};
 
 export default App;
