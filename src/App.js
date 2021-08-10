@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from "react";
 import fire from 'firebase/app';
 import './App.css';
-import './estilo.footer.css';
-import './estilo.header.css';
-import './index.css';
+import './components/Footer/estilo.footer.css';
+import './components/Header/estilo.header.css';
+import './components/Home/index.css';
 
 
 import Footer from './components/Footer/Footer.jsx';
