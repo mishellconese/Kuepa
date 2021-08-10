@@ -1,3 +1,4 @@
+import React from 'react';
 import logo from './utils/imagenes/kuepa_logo.png'
 import './estilo.header.css'
 

@@ -1,3 +1,4 @@
+import React from 'react';
 import derecho from './utils/imagenes/image_3.png'
 import './index.css'
 

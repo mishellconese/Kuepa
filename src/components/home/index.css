@@ -99,3 +99,8 @@ a:hover{
 
     color: rgba(255, 255, 255, 0.829);
 }
+
+.errorMsg {
+    color: red;
+    font-size: 15px;
+  }

@@ -1,19 +1,15 @@
 
 import React, {useState, useEffect} from "react";
-import fire from './firebase';
+import fire from 'firebase/app';
 import './App.css';
 import './estilo.footer.css';
 import './estilo.header.css';
 import './index.css';
 
 
-
-
-
 import Footer from './components/Footer/Footer.jsx';
 import Header from './components/Header/Header.jsx';
 import Page from './components/Home/Home.jsx';
-import { isBreakOrContinueStatement } from 'typescript';
 
 
 function App() {
@@ -81,7 +77,7 @@ const handleLogout = () => {
 };
 
 const authListener = () => {
-  fire.onAuthStatementChanged(user => {
+  fire.auth().onAuthStateChanged(user => {
     if(user){
       clearInputs();
       setUser(user);
@@ -97,9 +93,20 @@ const authListener = () => {
 
   return (
     <div>
-      <Header/>
-      <Page/>
-      <Footer/>
+     <Header/>
+     <Page
+        email={email}
+        setEmail={setEmail}
+        password={password}
+        setPassword={setPassword}
+        handleLogin={handleLogin}
+        handleSingup={handleSingup}
+        hasAccount={hasAccount}
+        setHasAccount={setHasAccount}
+        emailError={emailError}
+        passwordError={passwordError}
+        />
+     <Footer/>
       </div>
   );
 }

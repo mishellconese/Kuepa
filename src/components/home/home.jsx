@@ -1,7 +1,20 @@
 import derecho from '../../utils/imagenes/image_3.png'
 import './index.css'
 
-function Home() {
+const Home = (props) => {
+
+  const {   email,
+            setEmail,
+            password,
+            setPassword,
+            handleLogin,
+            handleSingup,
+            hasAccount,
+            setHasAccount,
+            emailError,
+            passwordError
+        } = props;
+
     return (
 
         <section className="body">
@@ -14,14 +27,18 @@ function Home() {
 
                   <p className="txt">Nombre de Usuario</p>
 
-                  <input className="barra" type="text" name="UseR" />
+                  <input className="barra" type="text" name="User" required autoFocus value={email} onChange={e => setEmail(e.target.value)}/>
+
+                  <p className="errorMsg">{emailError}</p>
 
                   <p className="txt">Contraseña</p>
 
-                  <input className="barra" type="password" name="Pass" />
+                  <input className="barra" type="password" name="Pass" required value={password} onChange={e => setPassword(e.target.value)}/>
+
+                  <p className="errorMsg">{passwordError}</p>
 
                   <div className="boton">
-                        <a className="a" href="#">Iniciar Sesión</a>
+                        <a onClick={handleSingup} className="a" href="#">Iniciar Sesión</a>
                   </div>
 
                  </div>
