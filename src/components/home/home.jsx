@@ -1,7 +1,7 @@
 import React from 'react';
 import derecho from '../../utils/imagenes/image_3.png'
+import Egresados from '../Pages/Egresados.jsx';
 import './index.css'
-import Egresados from '../../Egresados';
 
 const Home = (props) => {
 

@@ -9,7 +9,7 @@ import './components/Home/index.css';
 import Footer from './components/Footer/Footer.jsx';
 import Header from './components/Header/Header.jsx';
 import Page from './components/Home/Home.jsx';
-import Egresados from "./Egresados";
+import Egresados from "./components/Pages/Egresados";
 
 
 function App() {
