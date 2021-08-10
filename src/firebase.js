@@ -1,15 +1,24 @@
- import firebase from 'firebase/app';
-import 'firebase/firestore'
- 
- // Your web app's Firebase configuration
+import firebase from 'firebase/app';
+
   var firebaseConfig = {
-    apiKey: "AIzaSyBWv1QmT0JlM4-jQBbuTyPR-TWamBxx2K0",
-    authDomain: "egresados-a544f.firebaseapp.com",
-    projectId: "egresados-a544f",
-    storageBucket: "egresados-a544f.appspot.com",
-    messagingSenderId: "695834747502",
-    appId: "1:695834747502:web:6c52e347765c84d82b3c7f"
+
+    apiKey: "AIzaSyB4xbDX3SZ0iRNqe8Y_g6EBWb6QEnQ9I24",
+
+    authDomain: "proyecto-andrea-dd524.firebaseapp.com",
+
+    projectId: "proyecto-andrea-dd524",
+
+    storageBucket: "proyecto-andrea-dd524.appspot.com",
+
+    messagingSenderId: "1086733966102",
+
+    appId: "1:1086733966102:web:c66e26fa0258264b8c4e37",
+
+    measurementId: "G-C4EDQ42KTB"
+
   };
+
   // Initialize Firebase
-  const fb = firebase.initializeApp(firebaseConfig);
-  export const db = fb.firestore();
+
+  const fire = firebase.initializeApp(firebaseConfig);
+  export default fire;
