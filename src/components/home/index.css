@@ -5,6 +5,8 @@
     margin-left: 0%;
     margin-right: 0%;
     background-color: white;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .cont1{
