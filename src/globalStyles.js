@@ -9,3 +9,16 @@ import RobotoBlack from './utils/fonts/Roboto-Black.ttf'
 import RobotoBold from './utils/fonts/Roboto-Bold.ttf'
 import RobotoMedium from './utils/fonts/Roboto-Medium.ttf'
 import RobotoRegular from './utils/fonts/Roboto-Regular.ttf'
+
+const GlobalStyles = createGlobalStyle `
+
+body{
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+
+}
+
+`
+export default GlobalStyles;

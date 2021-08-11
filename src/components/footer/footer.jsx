@@ -4,7 +4,7 @@ import './estilo.footer.css'
 function Footer() {
     return (
 
-<div className="body">
+<div className="body3">
 
     <footer>
 

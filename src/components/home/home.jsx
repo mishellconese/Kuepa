@@ -27,13 +27,13 @@ const Home = (props) => {
 
                   <p className="inicio">Iniciar Sesión</p>
 
-                  <p className="txt">Nombre de Usuario</p>
+                  <p className="txt1">Nombre de Usuario</p>
 
-                  <input className="barra" type="text" name="User" required autoFocus value={email} onChange={e => setEmail(e.target.value)}/>
+                  <input on className="barra" type="text" name="User" required autoFocus value={email} onChange={e => setEmail(e.target.value)}/>
 
                   <p className="errorMsg">{emailError}</p>
 
-                  <p className="txt">Contraseña</p>
+                  <p className="txt1">Contraseña</p>
 
                   <input className="barra" type="password" name="Pass" required value={password} onChange={e => setPassword(e.target.value)}/>
 

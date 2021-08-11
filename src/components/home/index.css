@@ -1,17 +1,13 @@
 
-*{
-
-    overflow-y: hidden;
-    overflow-x: hidden;
-
-}
 .body{
 
+    background-color: white;
+    overflow-y: hidden;
+    overflow-x: hidden;
     margin-top: 0%;
     margin-bottom: 0%;
     margin-left: 0%;
     margin-right: 0%;
-    background-color: white;
 }
 
 .cont1{
@@ -24,6 +20,10 @@
 
     height: 100%;
     width: 500px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
 }
 
 .img1{
@@ -44,7 +44,7 @@
 
 }
 
-.txt{
+.txt1{
 
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
